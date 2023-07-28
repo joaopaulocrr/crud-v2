@@ -54,7 +54,7 @@ const miniRedeSocial = {
         // postQueVaiSerAtualizado.content = novoConteudo
     }
 }
-   
+
 
 //Código de front-end: web
 
@@ -95,7 +95,6 @@ document.querySelector('.listaDePosts').addEventListener('input', function (info
     const elementoAtual = infosDoEvento.target
     const id = elementoAtual.parentNode.getAttribute('data-id')
     console.log('ID: ', id)
-    console.log('Valor: ',elementoAtual.innerText)
+    console.log('Valor: ', elementoAtual.innerText)
     miniRedeSocial.atualizaContentDoPost(id, elementoAtual.innerText)
 })
-
